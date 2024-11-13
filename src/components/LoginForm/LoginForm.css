@@ -1,0 +1,52 @@
+/* LoginForm.css */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  label {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  input,
+  button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Garante que padding não afeta a largura total */
+  }
+  
+  input.error {
+    border-color: red;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+  }

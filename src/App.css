@@ -1,0 +1,22 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.main-content {
+  margin-left: 250px; /* Largura da navbar fixada à esquerda */
+  padding: 20px; /* Adicionando padding ao conteúdo */
+  transition: margin-left 0.3s ease; /* Transição suave caso a navbar seja ajustada */
+}
+
+/* Se você quiser adicionar um comportamento responsivo para telas menores */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0; /* Remover margem em telas pequenas */
+    padding: 10px;
+  }
+}

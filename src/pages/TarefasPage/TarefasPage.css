@@ -1,0 +1,100 @@
+/* TarefasPage.css */
+.tasks-page-container {
+    background-color: #f4f6f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 80px;
+}
+
+.tasks-content-container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.tasks-page-header h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.add-task-container {
+    display: flex;
+    flex-direction: column; /* Organiza os itens verticalmente */
+    gap: 10px;
+    margin-bottom: 30px;
+    width: 100%; /* Garante que o contêiner ocupe toda a largura */
+}
+
+.add-task-input {
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%; /* O input ocupa toda a largura disponível */
+}
+
+.add-task-button {
+    padding: 12px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%; /* O botão ocupa toda a largura disponível */
+}
+
+.add-task-button:hover {
+    background-color: #45a049;
+}
+
+.tasks-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    flex-direction: column; /* Faz os elementos dentro do li ficarem em coluna */
+    justify-content: flex-start; /* Garante que os itens comecem no topo */
+    padding: 15px;
+    border: 1px solid #ddd; /* Borda fina para destacar a tarefa */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 15px; /* Espaçamento entre as tarefas */
+    background-color: #fff; /* Fundo branco para melhor contraste */
+}
+
+.task-button {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Faz os botões ocuparem a largura do li */
+    margin-top: 5px; /* Dá um espaçamento entre o texto da tarefa e os botões */
+}
+
+.task-button:hover {
+    background-color: #d32f2f;
+}
+
+.task-button + .task-button {
+    background-color: #ffa500;
+    margin-left: 0; /* Remove qualquer margem à esquerda */
+}
+
+.task-button + .task-button:hover {
+    background-color: #e68900;
+}
